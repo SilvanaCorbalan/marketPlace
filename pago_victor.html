@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./img/logo-icono.png">
+
+  <title>Formulario de Pago</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/pagina4/pago.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/breadcrumb.css">
+  <link rel="stylesheet" href="/css/modales.css">
+
+  <link rel="stylesheet" href="/css/pagina4/queries.css">
+  <link rel="stylesheet" href="/css/queries.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-lg-flex align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand ms-2 ms-lg-5 me-5 pt-0" href="index.html"><img src="./img/logo.png" id="logo" alt=""></a>
+      <!-- Buscar -->
+      <form class="d-none d-lg-flex ms-5 align-items-center">
+        <input class="form-control" id="search" type="search" placeholder="Buscá entre los mejores salones"
+          aria-label="Search">
+        <a class="btn" type="submit" href="busqueda.html"><img src="./img/buscar-icono.png" id="iconoBuscar" alt=""></a>
+      </form>
+      <!-- Toggler -->
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#menuMovil"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navs -->
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" href="#modalIngresar" aria-current="page">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primario" data-bs-toggle="modal" href="#modalRegistrarSalon">Publicá tu salón</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="container d-lg-block border-light mb-3 p-2 w-75 w-md-100" id="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html" class="link-ul">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="busqueda.html" class="link-ul">Salones</a></li>
+      <li class="breadcrumb-item"><a href="shop_victor.html" class="link-ul">Shop</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Pago</li>
+    </ol>
+  </nav>
+
+  <div class="container main w-75 w-md-100 mb-5">
+    <div class="row">
+      <aside class="infobar col-12 col-lg-4 m-0 row p-3">
+        <div class="infobar-salon col-12 d-flex justify-content-center align-items-center mb-4">
+          <img class="infobar-img" src="./img/carrusel-vh1.png" alt="Victor Hugo">
+          <div>
+            <a href="shop_victor.html">
+              <h4 class="ms-2 mt-3">Victor Hugo Peluquería</h4>
+            </a>
+          </div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.4439970910485!2d-65.2026059!3d-26.825827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1758797941%3A0xe5c3c0942c4e1ea!2sRocky&#39;s%20Barber%C3%ADa%20%26%20Drinks!5e0!3m2!1sen!2sar!4v1618839687550!5m2!1sen!2sar"
+          width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          class="mapa d-none d-lg-inline-block col-12"></iframe>
+        </section>
+      </aside>
+      <div class="col-12 col-lg-8 row p-2 ms-1 m-lg-0">
+        <ul class="Columna1 col-12 col-lg-6 d-flex flex-column flex-wrap justify-content-evenly p-lg-4">
+          <!-- <br><br><br><br> -->
+          <label for="fname">Nombre:</label>
+          <input type="text" id="formtel" name="formname">
+
+          <label for="formtel">Telefono:</label>
+          <input type="text" id="formtel" name="formtel">
+          <label for="fname" class="col-sm-12">Apellido:</label>
+          <input type="text" id="formtel" name="formname">
+          <label for="fname">DNI/CUIL/CUIT:</label>
+          <input type="text" id="formtel" name="formtel">
+
+
+
+
+          <div class="d-flex flex-column justify-content-evenly">
+
+
+
+          </div>
+        </ul>
+        <ul class="Columna2 col-12 col-lg-6 d-flex flex-column justify-content-evenly p-lg-4">
+
+          <label for="lname">Numero de tarjeta:</label>
+          <input type="text" id="nrocard" name="nrocard">
+          <label for="lname" class="col-sm-12">Codigo de Seguridad:</label>
+          <input type="text" id="securitycod" name="securitycod">
+          <div class="mt-2 mb-2">
+            <input type="radio" id="Credito" name="card" value="credito">
+            <label for="Credito">Credito</label>
+            <input type="radio" id="Debito" name="card" value="debito">
+            <label for="Debito">Debito</label>
+          </div>
+          <label for="codpr">Codigo Promocional:</label>
+          <input type="text" id="codpr" name="codpr" class="inputcod">
+
+
+
+        </ul>
+        <button type="button" class="btn btn-dark w-50" id="botonReservar">Reservar</button>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Modales  -->
+  <!-- Modal Ingresar -->
+  <div class="modal fade" id="modalIngresar" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content volver w-75 d-lg-none mt-4 mb-4">
+        <a href="#menuMovil" data-bs-dismiss="modal" data-bs-toggle="modal" class=" w-50"><img
+            src="./img/volver-icono.png" alt="" class="icono me-2">
+          <h5 class="d-inline">Menu</h5>
+        </a>
+      </div>
+      <div class="modal-content contenido">
+        <div class="modal-header">
+          <h5 class="modal-title ">Ingresar</h5>
+        </div>
+        <form action="" class="d-flex flex-column justify-content-evenly text-center ps-3 pe-3">
+          <input type="email" placeholder="Dirección de correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button class="btn btn-primario" data-bs-dismiss="modal" type="submit">Ingresar</button>
+          <a href="#modalRecuperar" data-bs-dismiss="modal" data-bs-toggle="modal" class="link-ul">¿Olvidaste
+            tu
+            contraseña?</a>
+          <p> ¿No tenés una cuenta? <a class="link-modal" data-bs-toggle="modal" href="#modalRegistrarse"
+              data-bs-dismiss="modal">Registrate</a></p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Registrarse -->
+  <div class="modal fade" id="modalRegistrarse" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content volver w-75 d-lg-none mt-4 mb-4">
+        <a href="#menuMovil" data-bs-dismiss="modal" data-bs-toggle="modal" class=" w-50"><img
+            src="./img/volver-icono.png" alt="" class="icono me-2">
+          <h5 class="d-inline">Menu</h5>
+        </a>
+      </div>
+      <div class="modal-content contenido">
+        <div class="modal-header">
+          <h5 class="modal-title">Registrarse</h5>
+        </div>
+        <form action="" class="d-flex flex-column justify-content-evenly text-center ps-3 pe-3">
+          <input type="text" placeholder="Nombre" required>
+          <input type="text" placeholder="Apellido" required>
+          <input type="text" placeholder="Teléfono">
+          <input type="email" placeholder="Dirección de correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <p><input type="checkbox"> Acepto los términos y condiciones y las políticas de privacidad de
+            Lookeate</p>
+          <button class="btn btn-primario" data-bs-dismiss="modal" type="submit">Registrarse</button>
+          <p> ¿Ya tenés una cuenta? <a class="link-modal" href="#modalIngresar" data-bs-toggle="modal"
+              data-bs-dismiss="modal" role="button">Ingresá</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Registrar Salón -->
+  <div class="modal fade" id="modalRegistrarSalon" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+
+    <div class="modal-dialog">
+      <div class="modal-content volver w-75 d-lg-none mt-4 mb-4">
+        <a href="#menuMovil" data-bs-dismiss="modal" data-bs-toggle="modal" class=" w-50"><img
+            src="./img/volver-icono.png" alt="" class="icono me-2">
+          <h5 class="d-inline">Menu</h5>
+        </a>
+      </div>
+      <div class="modal-content contenido">
+        <div class="modal-header">
+          <h5 class="modal-title ">Registrar Salón</h5>
+        </div>
+        <form action="" class="d-flex flex-column justify-content-evenly text-center ps-3 pe-3">
+          <p> Nos vamos a poner en contacto con vos para informarte más sobre nuestro servicio</p>
+          <input type="text" placeholder="Nombre del salón" required>
+          <input type="text" placeholder="Nombre de contacto" required>
+          <input type="text" placeholder="Teléfono">
+          <input type="email" placeholder="Dirección de correo electrónico" required>
+          <input type="text" placeholder="Dirección" required>
+          <input type="text" placeholder="Página web/Facebook/Instagram" required>
+          <button class="btn btn-primario" data-bs-dismiss="modal" type="submit">Recibir Información</button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Recuperar Contraseña -->
+  <div class="modal fade" id="modalRecuperar" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content volver w-75 d-lg-none mt-4 mb-4">
+        <a href="#menuMovil" data-bs-dismiss="modal" data-bs-toggle="modal" class=" w-50"><img
+            src="./img/volver-icono.png" alt="" class="icono me-2">
+          <h5 class="d-inline">Menu</h5>
+        </a>
+      </div>
+      <div class="modal-content contenido">
+        <div class="modal-header">
+          <h5 class="modal-title ">Recuperar Contraseña</h5>
+        </div>
+        <form action="" class="d-flex flex-column justify-content-evenly text-center ps-3 pe-3">
+          <p class="m-0">Te vamos a enviar un correo a tu cuenta de e-mail con los pasos para recuperar tu
+            contraseña
+          </p>
+          <input type="email" placeholder="Dirección de correo electrónico" required>
+          <button class="btn btn-primario" data-bs-dismiss="modal" type="submit">Enviar</button>
+          <p> ¿Si recordás tu contraseña? <a class="link-modal" data-bs-toggle="modal" href="#modalIngresar"
+              data-bs-dismiss="modal">Ingresá</a></p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Buscar -->
+  <div class="modal fade" id="modalBuscar" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content volver w-75 d-lg-none mt-4 mb-4">
+        <a href="#menuMovil" data-bs-dismiss="modal" data-bs-toggle="modal" class=" w-50"><img
+            src="./img/volver-icono.png" alt="" class="icono me-2">
+          <h5 class="d-inline">Menu</h5>
+        </a>
+      </div>
+      <div class="modal-content contenido">
+        <!-- <form action="" class="d-flex flex-column justify-content-evenly text-center ps-3 pe-3">
+          
+        </form> -->
+        <form class="m-3 text-center">
+          <input class="form-control mb-3" id="search" type="search" placeholder="Buscá entre los mejores salones"
+            aria-label="Search">
+          <a class="btn btn-primario" href="busqueda.html" type="submit" data-bs-dismiss="modal">Buscar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Menú Móvil -->
+  <div class="modal fade" id="menuMovil" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content text-end mt-5">
+        <a href="#modalIngresar" data-bs-dismiss="modal" data-bs-toggle="modal" class="mb-3">
+          <h2>Ingresar</h2>
+        </a>
+        <a href="#modalBuscar" data-bs-dismiss="modal" data-bs-toggle="modal" class="mb-3">
+          <h2>Buscar</h2>
+        </a>
+        <a href="#modalRegistrarSalon" data-bs-dismiss="modal" data-bs-toggle="modal" class="mb-3">
+          <h2 id="linkPublicar">Publicá tu salón</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="container-fluid p-2 mt-4">
+    <div class="row pt-4">
+      <div class="col-12 col-lg-6 text-center mb-3 mb-lg-0 d-flex flex-column justify-content-evenly">
+        <h3 class="mb-0">La empresa</h3>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+      </div>
+
+      <div class="col-12 col-lg-6 text-center">
+        <h3 class="mt-lg-2">Contacto</h3>
+        <p>contacto@lookeate.com</p>
+        <p>(381) 155-234-345</p>
+        <a href=""><img src="./img/icono-fb.png" alt="" class="icono"></a>
+        <a href=""><img src="./img/icono.ig.png" alt="" class="icono ms-3 me-3"></a>
+        <a href=""><img src="./img/icono-tw.png" alt="" class="icono"></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+</body>
+
+</html>
